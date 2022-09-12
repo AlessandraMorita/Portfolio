@@ -5,146 +5,286 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <!-- font-family: 'Qwitcher Grypen', cursive;-->
+
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <!-- Logo --> 
             <div class="image-container logo">
-                <img src="" alt="Photo">
-            </div>
-            <!-- Navigation Bar --> 
+                <img src="./resources/images/casa.png" alt="Home">
+            </div>          
+
+            <!-- Navigation Bar -->
             <ul class="navigation">
-                <li><a href="">About Me</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">My Skills</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skill">My Skills</a></li>
             </ul>
+
+
+            <!-- Navigation Bar for Small Screen-->           
+            <input type="checkbox" id="close" checked>
+            <p class="menu">Menu</p>
+            <div class="side-menu">
+                <p class="menu-close">x</p>
+                <ul>
+                    <li id="menu0"><a href="#about">About Me</a></li>
+                    <li id="menu1"><a href="#project">Projects</a></li>
+                    <li id="menu2"><a href="#skill">My Skills</a></li>
+                </ul>
+            </div>
+
         </nav>
     </header>
 
     <main>
-        <section class="about">
-            <div class="container">
-                <h1>Hello! I'm Alessandra Morita</h1>
-                <p>🌱 I’m currently learning Front-end development 📚 I've a degree in electrical engineering 🐣 Learn, try and grow</p>
+        <!-- Hello Section -->
+        <section class="hello container">
+                <div class="content">
+                    <h1>Hello! I'm Alessandra Morita</h1>
+                    <p>🌱 I’m currently learning Front-end development 📚 I've a degree in electrical engineering 🐣 Learn, try and grow</p>
+                </div>
+                
                 <div class="image-container">
-                    <img src="" alt="Photo">
+                    <img src="./resources/images/x.png" alt="x">
                 </div>
-            </div>
-            
-            <div class="container">
-                <div class="container">
-                    <p>About me.....</p>
-                    <button type="button">Check out my qualifications!</button>
-                </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="container" id="about">          
                 <div class="image-container">
-                    <img src="" alt="">
+                    <img src="./resources/images/photo.png" alt="Alessandra Morita">
                 </div>
+                <div class="content">
+                    <p>My lifelong passion for technology, led me to the field of Engineering, thus I studied Mechatronics as well as Automation and Control Engineering. Flexibility and Eagerness to learn stood me in good stead while completing my studies at university. And now it's helping me on this new path </p>
+                    <div class="button">
+                        <p><a href="">Check out my qualifications!</a></p>
+                    </div>                    
             </div>
         </section>
 
-        <section class="project">
-            <h2>PROJECTS</h2>
-            <!-- Project 1 -->
-            <div class="container">
-                <div class="image-container">
-                    <img src="" alt="">
-                </div>
-                <div class="container">
-                    <h3>Project Name</h3>
-                    <div class="technologies">
-                        <p>JS</p>
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                    </div>
-                    <p class="description">Description of the Project</p>
-                    <button type="button">View Project</button>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="container">
-                <div class="image-container">
-                    <img src="" alt="">
-                </div>
-                <div class="container">
-                    <h3>Project Name</h3>
-                    <div class="technologies">
-                        <p>JS</p>
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                    </div>
-                    <p class="description">Description of the Project</p>
-                    <button type="button">View Project</button>
-                </div>
-            </div>
-
-            <!-- Project Coming soon -->
-            <div class="container">
-                <div class="image-container">
-                    <img src="" alt="Coming soon">
-                </div>
-                <div class="container">
-                    <h3>Project Name</h3>
-                    <div class="technologies">
-                        <p>JS</p>
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                    </div>
-                    <p class="description">Description of the Project</p>
-                    <button type="button">View Project</button>
-                </div>
-            </div>
-
-            <!-- Show one at a time -->
-            <button type="button">More +</button>
-            <button type="button">Less -</button>
-        </section>
-
-        <section class="skill">
+        <section id="skill" class="container col">
             <h2>SKILLS & TOOLS</h2>
             <p>The skills, tools and technologies I use to bring my projects to life:</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>GitHub</li>
-                <li>Visual Studio Code</li>
-                <li>Responsive Websites</li>
-                <li>Web Accessibility</li>
-            </ul>
+            <div class="container">
+                <div class="technology">
+                    <div class="image-container">
+                        <img src="./resources/images/HTML.png" alt="HTML">
+                    </div>
+                    <p>HTML</p>
+                </div>
+                <div class="technology">
+                    <div class="image-container">
+                        <img src="./resources/images/CSS.png" alt="CSS">
+                    </div>
+                    <p>CSS</p>
+                </div>
+                <div class="technology">
+                    <div class="image-container">
+                        <img src="./resources/images/JS.png" alt="JavaScript">
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+                <div class="technology">
+                    <div class="image-container">
+                        <img src="./resources/images/React.png" alt="React">
+                    </div>
+                    <p>React</p>
+                </div>
+                <div class="technology">
+                    <a href="https://github.com/AlessandraMorita" target="_blank">
+                        <div class="image-container">
+                            <img src="./resources/images/GitHub-Mark-120px-plus.png" alt="GitHub">
+                        </div>
+                        <p>GitHub</p>
+                    </a>
+                </div>
+                <div class="technology">
+                    <a href="https://code.visualstudio.com/" target="_blank">
+                        <div class="image-container">
+                            <img src="./resources/images/vscode.png" alt="Visual Studio Code">
+                        </div>
+                        <p>Visual Studio Code</p>
+                    </a>
+                </div>
+                <div class="technology">
+                    <div class="image-container">
+                        <img src="./resources/images/Devices.png" alt="Responsive Websites">
+                    </div>
+                    <p>Responsive Websites</p>
+                </div>
+                <div class="technology">
+                    <div class="image-container">
+                        <img src="./resources/images/Web Acessibility2.png" alt="Web Accessibility">
+                    </div>
+                    <p>Web Accessibility</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container col" id="project">
+            <h2>PROJECTS</h2>
+            <div class="project-list">
+                <div id="tablist">
+                    <div id="tab-0">Company</div>
+                    <div id="tab-1">Plant Club</div>
+                    <div id="tab-2">Coming Soon</div>
+                    <div id="tab-3">Project 4</div>
+                    <div id="tab-4">Project 5</div>
+
+                </div>
+                <div class="project-description">
+                    <!-- Project 1 -->
+                    <div class="panel" id="p0">
+                        <div class="image-container">
+                            <a href="https://alessandramorita.github.io/Company_Project/" target="_blank"><img src="./resources/images/company project.png" alt="Company Project Page Image"></a>
+                        </div>
+                        <div class="technologies">
+                            <h3>Company Project</h3>
+                            <div>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>- Build the layout for a company’s homepage<br>
+                                - Work with responsive desing<br>
+                                - Implement html and css files to "About" page</p>
+                            <span type="button"><a href="">Live Page</a></span>
+                            <span type="button"><a href="">Code</a></span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="panel" id="p1">
+                        <div class="image-container">
+                            <a href="https://alessandramorita.github.io/Club_Project/" target="_blank"><img src="./resources/images/plant club.png" alt="Club Project Page Image"></a>
+                        </div>
+                        <div class="technologies">
+                            <h3>Plant Club Project</h3>
+                            <div>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>- Build the layout for a club group page</p>
+                            <span type="button"><a href="">Live Page</a></span>
+                            <span type="button"><a href="">Code</a></span>
+                        </div>
+                    </div>
+
+                    <!--Project Coming soon -->
+                    <div class="panel" id="p2">
+                        <div class="image-container">
+                            <a href=""><span style="font-family: 'Qwitcher Grypen', cursive;">Coming soon</span>
+                            <!-- <img src="" alt="Coming soon"> -->
+                            </a>
+                        </div>
+                        <div class="technologies">
+                            <h3>Project Name</h3>
+                            <div>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>JS</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Description of the Project</p>
+                            <span type="button"><a href="">Live Page</a></span>
+                            <span type="button"><a href="">Code</a></span>
+                        </div>
+                    </div>
+
+                    <!--Project Coming soon -->
+                    <div class="panel" id="p3">
+                        <div class="image-container">
+                            <a href=""><span style="font-family: 'Qwitcher Grypen', cursive;">Coming soon</span>
+                            <!-- <img src="" alt="Coming soon"> -->
+                            </a>
+                        </div>
+                        <div class="technologies">
+                            <h3>Project Name</h3>
+                            <div>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>JS</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Description of the Project</p>
+                            <span type="button"><a href="">Live Page</a></span>
+                            <span type="button"><a href="">Code</a></span>
+                        </div>
+                    </div>
+
+                    <!--Project Coming soon -->
+                    <div class="panel" id="p4">
+                        <div class="image-container">
+                            <a href=""><span style="font-family: 'Qwitcher Grypen', cursive;">Coming soon</span>
+                            <!-- <img src="" alt="Coming soon"> -->
+                            </a>
+                        </div>
+                        <div class="technologies">
+                            <h3>Project Name</h3>
+                            <div>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>JS</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Description of the Project</p>
+                            <span type="button"><a href="">Live Page</a></span>
+                            <span type="button"><a href="">Code</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer class="container">
         <!-- Social Media --> 
-        <div class="left container">
+        <div class="left">
             <h3>Find me around the web</h3>
-            <div class="social-media">
+            <div class="social-media container">
                 <!-- Linkedin --> 
                 <div class="image-container">
-                    <img src="" alt="Linkedin">
+                    <a href="https://github.com/AlessandraMorita" target="_blank">
+                        <img src="./resources/images/linkedin.png" alt="Linkedin">
+                    </a>
                 </div>
                 <!-- GitHub --> 
                 <div class="image-container">
-                    <img src="" alt="GitHub">
+                    <a href="https://github.com/AlessandraMorita" target="_blank">
+                        <img src="./resources/images/git.png" alt="GitHub">
+                    </a>
                 </div>
             </div>
         </div>
 
         <!-- Logo --> 
         <div class="image-container logo">
-            <img src="" alt="Logo">
+            <img src="./resources/images/x.png" alt="Logo">
         </div>
         
         <!-- Contact --> 
-        <div class="right container">
+        <div class="right">
             <h3>Let's get acquainted</h3>
             <ul class="navigation">
                 <li><a href="">About Me</a></li>
+                <!-- <li><a href="">Contact</a></li> -->
             </ul>
+            
         </div>
     </footer>
+
+    <script src="./resources/js/main.js"></script>
 </body>
 </html>
