@@ -28,7 +28,7 @@ ul {
 li {
     text-transform: uppercase;
     letter-spacing: .1rem;
-    display: inline;
+    display: inline-block;
     margin: 0 1.5rem;
     font-size: .75rem;
 }
@@ -36,6 +36,7 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+    padding: 0.5rem;
 }
 
 .container {
@@ -83,10 +84,6 @@ a {
 
 
 /* Navigation Bar */
-nav a {
-    padding: 0.5rem;
-}
-
 nav.container {
     justify-content: space-between;
     position: fixed;
@@ -115,7 +112,7 @@ nav input {
 .menu {
     display: none;
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     right: 15px;
     margin: 0;
     color: hsl(8, 58%, 90%);
@@ -207,18 +204,18 @@ nav input:checked ~ .side-menu {
     min-width: 243px;
 }
 
-.button {
+#about .button {
     text-align: right;
     margin: 1.5rem 0.5rem;
 }
 
-.button a {
+#about .button a {
     border: 0.1rem solid hsl(9, 28%, 27%);
 }
 
 #about .button p {
     font-size: .75rem;
-    display: inline;
+    display: inline-block;
 }
 
 @media only screen and (max-width: 768px) {
@@ -237,7 +234,7 @@ nav input:checked ~ .side-menu {
         margin-bottom: 1rem;
     }
 
-    .button {
+    #about .button {
         text-align: center;
     }
 }
@@ -330,17 +327,21 @@ nav input:checked ~ .side-menu {
 
 .panel {
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
     height: 100%;
     justify-items: start;
-    align-items: center;
     padding: 1rem;
 }
 
 .panel .image-container {
-    grid-area: 1 / 1 / span 3 / span 1;
+    grid-area: 1 / 1 / span 4 / span 1;
     justify-self: center;
     width: 100%;
+}
+
+.panel .image-container span {
+    font-family: 'Qwitcher Grypen', cursive; 
+    font-size: 3rem;
 }
 
 .panel .technologies {
@@ -349,7 +350,20 @@ nav input:checked ~ .side-menu {
 
 .panel .description {
     grid-area: 2 / 2 / span 2 / span 1;
-    align-self: flex-start;
+}
+
+.panel .button {
+    grid-area: 4 / 2 / span 1 / span 1;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.panel .button p {
+    color:hsl(0, 4%, 5%);
+    background-color: hsl(8, 58%, 70%);
+    display: inline-block;
+    margin-left: .5rem;
+    padding: 0.5rem;
 }
 
 .panel .technologies, .panel .description {
@@ -384,7 +398,7 @@ nav input:checked ~ .side-menu {
 .technologies p {
     font-size: .75rem;
     letter-spacing: .1rem;
-    display: inline;
+    display: inline-block;
     margin: .25rem;
     padding: .3rem;
     border: 1px solid hsl(8, 58%, 70%);
@@ -428,7 +442,11 @@ nav input:checked ~ .side-menu {
     }
     
     .panel .description {
-        grid-area: 7 / 1 / span 3 / span 1;
+        grid-area: 7 / 1 / span 2 / span 1;
+    }
+
+    .panel .button {
+        grid-area: 10 / 1 / span 1 / span 1;
     }
 
     .panel .technologies, .panel .description {
@@ -496,6 +514,10 @@ footer h3 {
     margin: 0.5rem 0;
 }
 
+footer a {
+    padding: 0;
+}
+
 footer .logo {
     padding: 0 15%;
     border-right:1px solid hsl(9, 28%, 27%);
@@ -531,8 +553,4 @@ footer .left, footer .right {
     footer .left, footer .right {
         align-self: center;
     }
-}
-
-@media only screen and (max-width: 480px) {
-
 }
