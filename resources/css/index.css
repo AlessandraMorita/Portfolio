@@ -106,7 +106,6 @@ nav input {
     width: 3rem;
     opacity: 0;
     cursor: pointer;
-    z-index: 1;
 }
 
 .menu {
@@ -135,6 +134,10 @@ nav input {
     font-size: 1rem;
     transform: translate(-100%, 0);
     transition: transform .5s cubic-bezier(0.4, 0, 1, 1);
+}
+
+#close {
+    z-index: 100;
 }
 
 .side-menu .menu-close {
@@ -167,10 +170,10 @@ nav input:checked ~ .side-menu {
 
 /* Hello Section */
 .hello {
-    background-image: url(../images/hello.png);
-    background-size:cover;
+    background-image: url(../images/PictureHello.png), url(../images/hello.png);
+    background-size: 98%, cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top 6rem, center center;
     height: 100vh;
     min-height: 450px;
 }
@@ -189,14 +192,14 @@ nav input:checked ~ .side-menu {
 /* About Section */
 #about {
     background-image: url(../images/Screenshot\ 2022-09-05\ 194501.png);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 
 #about .image-container {
-    margin-bottom: -5rem;
+    /* margin-bottom: -5rem; */
     max-width: 300px;
 }
 
@@ -221,7 +224,6 @@ nav input:checked ~ .side-menu {
 @media only screen and (max-width: 768px) {
     #about {
         flex-direction: column;
-        padding-top: 5rem;
     }
 
     #about .image-container {
@@ -241,8 +243,12 @@ nav input:checked ~ .side-menu {
 
 /* Skills Section */
 #skill {
-    padding: 10rem 2vw 5rem 2vw;
+    padding: 3rem 2vw 5rem 2vw;
     align-items: flex-start;
+    background-image: url(../images/PictureSkills.png);
+    background-size: 98%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 #skill .image-container {
@@ -252,6 +258,12 @@ nav input:checked ~ .side-menu {
 #skill div.container{
     max-width: 633px;
     align-self: center;
+}
+
+#skill p {
+    background-color: hsla(0, 0%, 100%, 0.785);
+    border-radius: 1rem;
+    padding: 0 0.8rem;
 }
 
 .technology {
@@ -265,7 +277,7 @@ nav input:checked ~ .side-menu {
 
 @media only screen and (max-width: 768px) {
     #skill {
-        padding-top: 5rem;
+        padding-top: 3rem;
     }
 }
 
@@ -281,10 +293,13 @@ nav input:checked ~ .side-menu {
 
 /* Projects Section */
 #project {
-    padding: 2rem;
-    padding-bottom: 5rem;
+    padding: 3rem 2rem;
     background-color: hsl(9, 28%, 27%);/* #583732 */
     color: hsl(8, 58%, 90%); /* #f4dbd7 */
+    background-image: url(../images/PictureProjects.png);
+    background-size: 98%;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 
 #project h2 {
@@ -420,7 +435,7 @@ nav input:checked ~ .side-menu {
 
 @media only screen and (max-width: 768px) {
     #project {
-        padding: 2rem 1rem 2.5rem 1rem;
+        padding: 3rem 1rem 2.5rem 1rem;
     }
 
     .panel {
@@ -460,7 +475,7 @@ nav input:checked ~ .side-menu {
 
 @media only screen and (max-width: 480px) {
     #project {
-        padding: 2rem 1rem 2.5rem 1rem;
+        padding: 3rem 1rem 2.5rem 1rem;
     }
 
     #project .project-list {
