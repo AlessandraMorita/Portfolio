@@ -1,303 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifolio</title>
-    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-        <!-- font-family: 'Qwitcher Grypen', cursive;-->
-
-</head>
-<body>
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Qwitcher Grypen', cursive;-->
+  </head>
+  <body>
     <header>
-        <nav class="container">
-            <!-- Logo --> 
-            <a href="">
-                <div class="image-container logo">
-                    <img src="./resources/images/casa.png" alt="Home">
-                </div>   
-            </a>
-                   
+      <nav class="container">
+        <!-- Logo -->
+        <a href="">
+          <div class="image-container logo">
+            <img src="./resources/images/casa.png" alt="Home" />
+          </div>
+        </a>
 
-            <!-- Navigation Bar -->
-            <ul class="navigation">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#skill">My Skills</a></li>
-            </ul>
+        <!-- Navigation Bar -->
+        <ul class="navigation">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#skill">My Skills</a></li>
+        </ul>
 
-
-            <!-- Navigation Bar for Small Screen-->           
-            <input type="checkbox" id="close" checked>
-            <p class="menu">Menu</p>
-            <div class="side-menu">
-                <p class="menu-close">x</p>
-                <ul>
-                    <li id="menu0"><a href="#about">About Me</a></li>
-                    <li id="menu1"><a href="#project">Projects</a></li>
-                    <li id="menu2"><a href="#skill">My Skills</a></li>
-                </ul>
-            </div>
-
-        </nav>
+        <!-- Navigation Bar for Small Screen-->
+        <input type="checkbox" id="close" checked />
+        <p class="menu">Menu</p>
+        <div class="side-menu">
+          <p class="menu-close">x</p>
+          <ul>
+            <li id="menu0"><a href="#about">About Me</a></li>
+            <li id="menu1"><a href="#project">Projects</a></li>
+            <li id="menu2"><a href="#skill">My Skills</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Hello Section -->
-        <section class="hello container">
-                <div class="content">
-                    <h1>Hello! I'm Alessandra Morita</h1>
-                    <p>🌱 I’m Front End Developer 📚 I've a degree in electrical engineering 🐣 Learn, try and grow</p>
-                </div>
-                
-                <div class="image-container">
-                    <img src="./resources/images/x.png" alt="x" style="display: none;">
-                </div>
-        </section>
+      <!-- Hello Section -->
+      <section class="hello container">
+        <div class="content">
+          <h1>Hello! I'm Alessandra Morita</h1>
+          <p>
+            🌱 I’m Front End Developer 📚 I've a degree in electrical
+            engineering 🐣 Learn, try and grow
+          </p>
+        </div>
 
-        <!-- About Me Section -->
-        <section class="container" id="about">          
-                <div class="image-container">
-                    <img src="./resources/images/photo.png" alt="Alessandra Morita">
-                </div>
-                <div class="content">
-                    <p>My lifelong passion for technology, led me to the field of Engineering, thus I studied Mechatronics as well as Automation and Control Engineering. Flexibility and Eagerness to learn stood me in good stead while completing my studies at university. And now it's helping me on this new path </p>
-                    <div class="button">
-                        <p><a href="./resources/media/CV - Alessandra M. Morita.pdf" target="_blank">Check out my qualifications!</a></p>
-                    </div>                    
+        <div class="image-container">
+          <img src="./resources/images/x.png" alt="x" style="display: none" />
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section class="container" id="about">
+        <div class="image-container">
+          <img src="./resources/images/photo.png" alt="Alessandra Morita" />
+        </div>
+        <div class="content">
+          <p>
+            My lifelong passion for technology, led me to the field of
+            Engineering, thus I studied Mechatronics as well as Automation and
+            Control Engineering. Flexibility and Eagerness to learn stood me in
+            good stead while completing my studies at university. And now it's
+            helping me on this new path
+          </p>
+          <div class="button">
+            <p>
+              <a
+                href="./resources/media/CV - Alessandra M. Morita.pdf"
+                target="_blank"
+                >Check out my qualifications!</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skill" class="container col">
+        <h2>SKILLS & TOOLS</h2>
+        <p>
+          The skills, tools and technologies I use to bring my projects to life:
+        </p>
+        <div class="container">
+          <div class="technology">
+            <div class="image-container">
+              <img src="./resources/images/HTML.png" alt="HTML" />
             </div>
-        </section>
-
-        <section id="skill" class="container col">
-            <h2>SKILLS & TOOLS</h2>
-            <p>The skills, tools and technologies I use to bring my projects to life:</p>
-            <div class="container">
-                <div class="technology">
-                    <div class="image-container">
-                        <img src="./resources/images/HTML.png" alt="HTML">
-                    </div>
-                    <p>HTML</p>
-                </div>
-                <div class="technology">
-                    <div class="image-container">
-                        <img src="./resources/images/CSS.png" alt="CSS">
-                    </div>
-                    <p>CSS</p>
-                </div>
-                <div class="technology">
-                    <div class="image-container">
-                        <img src="./resources/images/JS.png" alt="JavaScript">
-                    </div>
-                    <p>JavaScript</p>
-                </div>
-                <div class="technology">
-                    <div class="image-container">
-                        <img src="./resources/images/React.png" alt="React">
-                    </div>
-                    <p>React</p>
-                </div>
-                <div class="technology">
-                    <a href="https://github.com/AlessandraMorita" target="_blank">
-                        <div class="image-container">
-                            <img src="./resources/images/GitHub-Mark-120px-plus.png" alt="GitHub">
-                        </div>
-                        <p>GitHub</p>
-                    </a>
-                </div>
-                <div class="technology">
-                    <a href="https://code.visualstudio.com/" target="_blank">
-                        <div class="image-container">
-                            <img src="./resources/images/vscode.png" alt="Visual Studio Code">
-                        </div>
-                        <p>Visual Studio Code</p>
-                    </a>
-                </div>
-                <div class="technology">
-                    <div class="image-container">
-                        <img src="./resources/images/Devices.png" alt="Responsive Websites">
-                    </div>
-                    <p>Responsive Websites</p>
-                </div>
-                <div class="technology">
-                    <div class="image-container">
-                        <img src="./resources/images/Web Acessibility2.png" alt="Web Accessibility">
-                    </div>
-                    <p>Web Accessibility</p>
-                </div>
+            <p>HTML</p>
+          </div>
+          <div class="technology">
+            <div class="image-container">
+              <img src="./resources/images/CSS.png" alt="CSS" />
             </div>
-        </section>
-
-        <section class="container col" id="project">
-            <h2>PROJECTS</h2>
-            <div class="project-list">
-                <div id="tablist">
-                    <div id="tab-0">Company</div>
-                    <div id="tab-1">Plant Club</div>
-                    <div id="tab-2">Coming Soon</div>
-                    <div id="tab-3">Coming Soon</div>
-                    <div id="tab-4">Coming Soon</div>
-
-                </div>
-                <div class="project-description">
-                    <!-- Project 1 -->
-                    <div class="panel" id="p0">
-                        <div class="image-container">
-                            <a href="https://alessandramorita.github.io/Company_Project/" target="_blank"><img src="./resources/images/company project.png" alt="Company Project Page Image"></a>
-                        </div>
-                        <div class="technologies">
-                            <h3>Company Project</h3>
-                            <div>
-                                <p>HTML</p>
-                                <p>CSS</p>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>- Build the layout for a company’s homepage<br>
-                                - Work with responsive desing<br>
-                                - Implement html and css files to "About" page</p>
-                        </div>
-                        <div class="button">
-                            <p><a href="https://alessandramorita.github.io/Company_Project/" target="_blank">Live Page</a></p>
-                            <p><a href="https://github.com/AlessandraMorita/Company_Project" target="_blank">Code</a></p>
-                        </div>                        
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="panel" id="p1">
-                        <div class="image-container">
-                            <a href="https://alessandramorita.github.io/Club_Project/" target="_blank"><img src="./resources/images/plant club.png" alt="Club Project Page Image"></a>
-                        </div>
-                        <div class="technologies">
-                            <h3>Plant Club Project</h3>
-                            <div>
-                                <p>HTML</p>
-                                <p>CSS</p>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>- Build the layout for a club group page</p>
-                        </div>
-                        <div class="button">
-                            <p><a href="https://alessandramorita.github.io/Club_Project/" target="_blank">Live Page</a></p>
-                            <p><a href="https://github.com/AlessandraMorita/Club_Project" target="_blank">Code</a></p>
-                        </div>
-                    </div>
-
-                    <!--Project Coming soon -->
-                    <div class="panel" id="p2">
-                        <div class="image-container">
-                            <a href=""><span>Coming soon</span>
-                            <!-- <img src="" alt="Coming soon"> -->
-                            </a>
-                        </div>
-                        <div class="technologies">
-                            <h3>Project Name</h3>
-                            <div>
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JS</p>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>Description of the Project</p>
-                        </div>
-                        <div class="button">
-                            <p><a href="" target="_blank">Live Page</a></p>
-                            <p><a href="" target="_blank">Code</a></p>
-                        </div>
-                    </div>
-
-                    <!--Project Coming soon -->
-                    <div class="panel" id="p3">
-                        <div class="image-container">
-                            <a href=""><span>Coming soon</span>
-                            <!-- <img src="" alt="Coming soon"> -->
-                            </a>
-                        </div>
-                        <div class="technologies">
-                            <h3>Project Name</h3>
-                            <div>
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JS</p>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>Description of the Project</p>
-                        </div>
-                        <div class="button">
-                            <p><a href="" target="_blank">Live Page</a></p>
-                            <p><a href="" target="_blank">Code</a></p>
-                        </div>
-                    </div>
-
-                    <!--Project Coming soon -->
-                    <div class="panel" id="p4">
-                        <div class="image-container">
-                            <a href=""><span>Coming soon</span>
-                            <!-- <img src="" alt="Coming soon"> -->
-                            </a>
-                        </div>
-                        <div class="technologies">
-                            <h3>Project Name</h3>
-                            <div>
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JS</p>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <p>Description of the Project</p>
-                        </div>
-                        <div class="button">
-                            <p><a href="" target="_blank">Live Page</a></p>
-                            <p><a href="" target="_blank">Code</a></p>
-                        </div>
-                    </div>
-                </div>
+            <p>CSS</p>
+          </div>
+          <div class="technology">
+            <div class="image-container">
+              <img src="./resources/images/JS.png" alt="JavaScript" />
             </div>
-        </section>
+            <p>JavaScript</p>
+          </div>
+          <div class="technology">
+            <div class="image-container">
+              <img src="./resources/images/React.png" alt="React" />
+            </div>
+            <p>React</p>
+          </div>
+          <div class="technology">
+            <a href="https://github.com/AlessandraMorita" target="_blank">
+              <div class="image-container">
+                <img
+                  src="./resources/images/GitHub-Mark-120px-plus.png"
+                  alt="GitHub"
+                />
+              </div>
+              <p>GitHub</p>
+            </a>
+          </div>
+          <div class="technology">
+            <a href="https://code.visualstudio.com/" target="_blank">
+              <div class="image-container">
+                <img
+                  src="./resources/images/vscode.png"
+                  alt="Visual Studio Code"
+                />
+              </div>
+              <p>Visual Studio Code</p>
+            </a>
+          </div>
+          <div class="technology">
+            <div class="image-container">
+              <img
+                src="./resources/images/Devices.png"
+                alt="Responsive Websites"
+              />
+            </div>
+            <p>Responsive Websites</p>
+          </div>
+          <div class="technology">
+            <div class="image-container">
+              <img
+                src="./resources/images/Web Acessibility2.png"
+                alt="Web Accessibility"
+              />
+            </div>
+            <p>Web Accessibility</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container col" id="project">
+        <h2>PROJECTS</h2>
+        <div class="project-list">
+          <div id="tablist">
+            <div id="tab-0">Nutritional Information</div>
+            <div id="tab-1">Company</div>
+            <div id="tab-2">Plant Club</div>
+            <div id="tab-3">Coming Soon</div>
+            <div id="tab-4">Coming Soon</div>
+          </div>
+          <div class="project-description">
+            <!-- Project 1 -->
+            <div class="panel" id="p0">
+              <div class="image-container">
+                <a href="https://nutritional-info-94609.web.app/">
+                  <img
+                    src="./resources/images/NutritionalInfo.png"
+                    alt="Nutritional Information Page Image"
+                  />
+                </a>
+              </div>
+              <div class="technologies">
+                <h3>Nutritional Information</h3>
+                <div>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JS</p>
+                  <p>React</p>
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  This is a React web application. This app was developed to
+                  help me replace foods in my diet. It suggests substitute foods
+                  and calculates the required amount of it.
+                </p>
+              </div>
+              <div class="button">
+                <p>
+                  <a
+                    href="https://nutritional-info-94609.web.app/"
+                    target="_blank"
+                    >Live Page</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/AlessandraMorita/Nutritional_Table"
+                    target="_blank"
+                    >Code</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="panel" id="p1">
+              <div class="image-container">
+                <a
+                  href="https://alessandramorita.github.io/Company_Project/"
+                  target="_blank"
+                  ><img
+                    src="./resources/images/company project.png"
+                    alt="Company Project Page Image"
+                /></a>
+              </div>
+              <div class="technologies">
+                <h3>Company Project</h3>
+                <div>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  This is a simple layout for a company’s homepage. This page
+                  was developed to have responsive desing. The "About" page is
+                  also implemented.
+                </p>
+              </div>
+              <div class="button">
+                <p>
+                  <a
+                    href="https://alessandramorita.github.io/Company_Project/"
+                    target="_blank"
+                    >Live Page</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/AlessandraMorita/Company_Project"
+                    target="_blank"
+                    >Code</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="panel" id="p2">
+              <div class="image-container">
+                <a
+                  href="https://alessandramorita.github.io/Club_Project/"
+                  target="_blank"
+                  ><img
+                    src="./resources/images/plant club.png"
+                    alt="Club Project Page Image"
+                /></a>
+              </div>
+              <div class="technologies">
+                <h3>Plant Club Project</h3>
+                <div>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                </div>
+              </div>
+              <div class="description">
+                <p>
+                  This is a simple layout for a club group page. This page was
+                  developed to have responsive desing.
+                </p>
+              </div>
+              <div class="button">
+                <p>
+                  <a
+                    href="https://alessandramorita.github.io/Club_Project/"
+                    target="_blank"
+                    >Live Page</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/AlessandraMorita/Club_Project"
+                    target="_blank"
+                    >Code</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <!--Project Coming soon -->
+            <div class="panel" id="p4">
+              <div class="image-container">
+                <a href=""
+                  ><span>Coming soon</span>
+                  <!-- <img src="" alt="Coming soon"> -->
+                </a>
+              </div>
+              <div class="technologies">
+                <h3>Project Name</h3>
+                <div>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JS</p>
+                </div>
+              </div>
+              <div class="description">
+                <p>Description of the Project</p>
+              </div>
+              <div class="button">
+                <p><a href="" target="_blank">Live Page</a></p>
+                <p><a href="" target="_blank">Code</a></p>
+              </div>
+            </div>
+
+            <!--Project Coming soon -->
+            <div class="panel" id="p5">
+              <div class="image-container">
+                <a href=""
+                  ><span>Coming soon</span>
+                  <!-- <img src="" alt="Coming soon"> -->
+                </a>
+              </div>
+              <div class="technologies">
+                <h3>Project Name</h3>
+                <div>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JS</p>
+                </div>
+              </div>
+              <div class="description">
+                <p>Description of the Project</p>
+              </div>
+              <div class="button">
+                <p><a href="" target="_blank">Live Page</a></p>
+                <p><a href="" target="_blank">Code</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="container">
-        <!-- Social Media --> 
-        <div class="left">
-            <h3>Find me around the web</h3>
-            <div class="social-media container">
-                <!-- Linkedin --> 
-                <div class="image-container">
-                    <a href="linkedin.com/in/alessandramorita" target="_blank">
-                        <img src="./resources/images/linkedin.png" alt="Linkedin">
-                    </a>
-                </div>
-                <!-- GitHub --> 
-                <div class="image-container">
-                    <a href="https://github.com/AlessandraMorita" target="_blank">
-                        <img src="./resources/images/git.png" alt="GitHub">
-                    </a>
-                </div>
-            </div>
+      <!-- Social Media -->
+      <div class="left">
+        <h3>Find me around the web</h3>
+        <div class="social-media container">
+          <!-- Linkedin -->
+          <div class="image-container">
+            <a href="linkedin.com/in/alessandramorita" target="_blank">
+              <img src="./resources/images/linkedin.png" alt="Linkedin" />
+            </a>
+          </div>
+          <!-- GitHub -->
+          <div class="image-container">
+            <a href="https://github.com/AlessandraMorita" target="_blank">
+              <img src="./resources/images/git.png" alt="GitHub" />
+            </a>
+          </div>
         </div>
+      </div>
 
-        <!-- Logo --> 
-        <div class="image-container logo">
-            <img src="./resources/images/x.png" alt="Logo" style="display: none;">
-        </div>
-        
-        <!-- Contact --> 
-        <div class="right">
-            <h3>Let's get acquainted</h3>
-            <ul class="navigation">
-                <li><a>About Me</a></li>
-                <!-- <li><a href="">Contact</a></li> -->
-            </ul>
-            
-        </div>
+      <!-- Logo -->
+      <div class="image-container logo">
+        <img src="./resources/images/x.png" alt="Logo" style="display: none" />
+      </div>
+
+      <!-- Contact -->
+      <div class="right">
+        <h3>Let's get acquainted</h3>
+        <ul class="navigation">
+          <li><a>About Me</a></li>
+          <!-- <li><a href="">Contact</a></li> -->
+        </ul>
+      </div>
     </footer>
 
     <script src="./resources/js/main.js"></script>
-</body>
+  </body>
 </html>
