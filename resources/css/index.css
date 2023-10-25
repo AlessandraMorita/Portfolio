@@ -199,7 +199,6 @@ nav input:checked ~ .side-menu {
 }
 
 #about .image-container {
-    /* margin-bottom: -5rem; */
     max-width: 300px;
 }
 
@@ -228,6 +227,7 @@ nav input:checked ~ .side-menu {
 
     #about .image-container {
         margin-bottom: 4rem;
+        max-width: 200px;
     }
 }
 
@@ -252,12 +252,13 @@ nav input:checked ~ .side-menu {
 }
 
 #skill .image-container {
-    max-width: 80px;
+    width: 4rem;
 }
 
-#skill div.container{
+#skill .container{
     max-width: 633px;
     align-self: center;
+    align-items: flex-start;
 }
 
 #skill p {
@@ -475,12 +476,16 @@ nav input:checked ~ .side-menu {
 
 @media only screen and (max-width: 480px) {
     #project {
-        padding: 3rem 1rem 2.5rem 1rem;
+        padding: 3rem 0rem 2.5rem 0rem;
+    }
+
+    #project h2 {
+        padding-left: 2vw;
     }
 
     #project .project-list {
         flex-direction: column;
-        width: 95%;
+        width: 100%;
         align-items: center;
         border-left: none;
     }
