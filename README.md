@@ -1,4 +1,4 @@
-# My Portifolio
+# My Portfolio
 
 Hello everyone, this is my portfolio. It's still basic, but I'm working on new projects and improving the page. It has responsive desing.
 
